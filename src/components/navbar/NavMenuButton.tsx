@@ -19,10 +19,10 @@ const NavMenuButton = ({ isMenuOpen, setIsMenuOpen, scrolled }: NavMenuButtonPro
         <HiX className="w-8 h-8 bg-btt text-light rounded-full p-2 transition duration-300 hover:bg-light hover:border hover:border-btt hover:text-btt" />
       ) : (
         <HiMenu
-          className={`w-8 h-8 rounded-full p-2 transition duration-300 ${
+          className={`w-8 h-8 rounded-full p-2 transition duration-300  ${
             scrolled
               ? "bg-transparent border border-btt text-btt hover:bg-btt hover:text-lighter"
-              : "bg-lighter text-darker hover:bg-btt hover:text-lighter"
+              : "bg-light text-darker border border-btt hover:bg-btt hover:text-lighter"
           }`}
         />
       )}

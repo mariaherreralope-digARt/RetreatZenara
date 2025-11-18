@@ -14,8 +14,8 @@ export default function TextParallax({ paragraph1 }: { paragraph1: string }) {
 
   return (
     <div
-      className="flex flex-wrap items-center justify-center font-body paragraph
-      h-[100vh] max-w-[1280px] px-10 md:px-50  bg-light text-darker  "
+      className="flex flex-wrap items-center justify-center font-body paragraph h-[70vh]
+      md:h-[100vh] max-w-full px-16 md:px-50  bg-light text-darker  "
     >
       <p
         ref={container}

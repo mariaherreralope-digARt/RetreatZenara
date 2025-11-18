@@ -76,7 +76,7 @@ export default function WhyUs() {
                 />
               </div>
 
-              <p className="text-lighter paragraph">{item.desc}</p>
+              <p className="text-lighter paragraph max-w-xs mx-auto">{item.desc}</p>
             </motion.div>
           ))}
         </div>

@@ -46,10 +46,10 @@ const TestimonialsSection: FC = () => {
   return (
     <section
       id="testimonials"
-      className="relative py-16 px-14 inset-0 z-0 bg-[url('/images/testimonialsBkg.png')] bg-cover bg-center max-w-7xl mx-auto"
+      className="relative w-full py-16 px-16 inset-0 z-0 bg-[url('/images/testimonialsBkg.png')] bg-cover bg-center  mx-auto"
     >
       {/* Overlay */}
-      <div className="absolute inset-0 bg-black/70 z-0"></div>
+      {/* <div className="absolute inset-0 bg-black/70 z-0"></div> */}
 
       {/* Heading */}
       <motion.div
@@ -79,8 +79,8 @@ const TestimonialsSection: FC = () => {
         >
           {testimonials.map((testimonial) => (
             <SwiperSlide key={testimonial.id}>
-              <div className="bg-white/20 p-8 rounded-lg shadow-md text-center max-w-2xl mx-auto relative z-0">
-                <p className="text-light mb-4 paragraph">
+              <div className="bg-darker/70 p-8 rounded-lg shadow-md text-center max-w-2xl mx-auto relative z-0">
+                <p className="text-lighter mb-4 paragraph">
                   "{testimonial.text}"
                 </p>
                 <h4 className="text-light  paragraph italic">{testimonial.name}</h4>

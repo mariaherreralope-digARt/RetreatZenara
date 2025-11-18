@@ -1,15 +1,25 @@
+
+
 /* ---------------- Fonts ---------------- */
 
 /* @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap'); */
 
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500;600;700&family=Red+Hat+Display:wght@300;400;500;600;700&display=swap');
 
-
+html, body {
+  background-color: var(--color-lighter) !important; /* or your bg-light */
+}
 
 /* ---------------- Tailwind (v4 syntax) ---------------- */
 @import "tailwindcss";
 @import "tailwindcss/utilities";
 
+
+/* @layer base {
+  body {
+    @apply bg-lighter;
+  }
+} */
 
 /* ---------------- Theme Tokens ---------------- */
 @theme {
@@ -34,20 +44,27 @@
   */
 /* GOLD */
   /* --color-dark: #8c7e61; 
-    --color-darker: ##7d735c;
+    --color-darker: #7d735c;
     --color-light: #f8f5ef;
     --color-lighter: #f8f5ef;
     --color-accent: #;
     --color-btt: #; 
   */
+   --color-dark: #A16B55; /*brown*/
+    --color-darker: #B2AFA9; /*dark gray*/
+    --color-light: #E1CFBB; /*pink*/
+    --color-lighter: #F6F6F6; /*light gray*/
+    --color-accent: #;
+    --color-btt: #A16B55; /*brown*/
+ 
 
   /* blues/GRAYS palette */
-    --color-dark: #4a7487;
+    /* --color-dark: #4a7487;
     --color-darker: #1b2c33;
     --color-light: #f3f3f3;
     --color-lighter: #FFFFFF;
     --color-accent: #;
-    --color-btt: #1b2c33;
+    --color-btt: #1b2c33; */
   
 
   /* === TYPOGRAPHY === */
@@ -66,6 +83,9 @@
  /*
   --font-heading: "Playfair Display", serif;
   --font-body: "Source Sans 3", sans-serif;
+
+  --font-heading: "Playfair Display", serif;
+  --font-heading: "Poppins", sans-serif;
 
   --font-heading: "Poppins", sans-serif;
   --font-body: "Lora", serif;
@@ -102,7 +122,7 @@
 }
 
 .paragraph {
-  @apply font-body text-sm font-light leading-normal
+  @apply font-body text-sm font-normal leading-normal
   tracking-wide;
 }
 

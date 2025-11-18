@@ -1,6 +1,6 @@
 import { Variants } from "framer-motion";
 
-// Fade in + slight upward motion
+/* /* Fade in + slight upward motion */
 export const fadeInUp: Variants = {
   hidden: { opacity: 0, y: 40 },
   show: {
@@ -10,7 +10,7 @@ export const fadeInUp: Variants = {
   },
 };
 
-// Simple fade in
+/* // Simple fade in */
 export const fadeIn: Variants = {
   hidden: { opacity: 0 },
   show: {
@@ -19,7 +19,7 @@ export const fadeIn: Variants = {
   },
 };
 
-// Stagger children animations inside a parent
+/* // Stagger children animations inside a parent */
 export const staggerContainer: Variants = {
   hidden: {},
   show: {
@@ -29,7 +29,7 @@ export const staggerContainer: Variants = {
   },
 };
 
-// Slide in from the left
+/* // Slide in from the left */
 export const slideInLeft: Variants = {
   hidden: { opacity: 0, x: -60 },
   show: {
@@ -39,7 +39,7 @@ export const slideInLeft: Variants = {
   },
 };
 
-// Slide in from the right
+/* // Slide in from the right */
 export const slideInRight: Variants = {
   hidden: { opacity: 0, x: 60 },
   show: {
@@ -49,7 +49,7 @@ export const slideInRight: Variants = {
   },
 };
 
-// Zoom in effect
+/* // Zoom in effect */
 export const zoomIn: Variants = {
   hidden: { opacity: 0, scale: 0.8 },
   show: {

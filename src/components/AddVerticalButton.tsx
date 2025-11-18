@@ -13,7 +13,7 @@ const VerticalButton: React.FC<VerticalButtonProps> = ({
   return (
     <a
       href={href}
-      className={`fixed top-1/2 transform -translate-y-1/2 px-4 py-2 btn-squared z-20 `}
+      className={`fixed top-1/2 transform -translate-y-1/2 px-4 py-2 btn-squared z-50 `}
       style={{ writingMode: "vertical-rl", textAlign: "center", transform: "rotate(180deg)", }}
     >
       {label}

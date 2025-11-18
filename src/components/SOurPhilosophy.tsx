@@ -5,8 +5,8 @@ import Image from "next/image";
 
 export default function OurPhilosophy() {
   return (
-    <section id="ourPhilosophy" className="w-full bg-light  pt-12  lg:pt-18">
-      <div className=" px-11 md:px-6 lg:px-20 mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+    <section id="ourPhilosophy" className="w-full h-screen bg-light  pt-12  lg:pt-18">
+      <div className=" px-11 md:px-6 lg:px-20 mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 md:gap-12 items-center">
         {/* LEFT CONTENT */}
         <div>
           <motion.h2
@@ -31,7 +31,7 @@ export default function OurPhilosophy() {
 
           </motion.p>
           <motion.p
-            className="paragraph text-darker mb-6"
+            className="paragraph text-darker mb-0 md:mb-6"
             initial={{ opacity: 0, y: -20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: false }}
@@ -41,20 +41,20 @@ export default function OurPhilosophy() {
 
           </motion.p>
 
-          <div className="flex sm:gap-2 md:gap-4 mt-6">
+          <div className="flex md:gap-4 md:mt-16">
             <Image
               src="/images/retreat.png"
               alt="content example"
               width={160}
               height={120}
-              className="object-cover"
+              className="hidden md:block object-cover"
             />
             <Image
               src="/images/relax.png"
               alt="content example"
               width={160}
               height={120}
-              className=" object-cover"
+              className=" hidden md:block object-cover"
             />
           </div>
         </div>
@@ -67,7 +67,7 @@ export default function OurPhilosophy() {
           transition={{ duration: 0.7 }}
           viewport={{ once: true }}
         >
-          <div className="w-full max-w-lg">
+          <div className="w-full max-w-md md:max-w-lg">
             <Image
               src="/images/aboutImg.png"
               alt="laptop frame"
@@ -87,14 +87,14 @@ export default function OurPhilosophy() {
             <p className="italic paragraph font-semibold text-darker   ">
               We combine luxury and transformation because we believe deep renewal deserves both comfort and inspiration.
             </p>
-            <p className="text-darker paragraph ">
+            <p className="text-darker paragraph  ">
               Each retreat is an invitation to slow down, realign, and step into a more purposeful, radiant life.
             </p>
           </div>
           </div>
         </motion.div>
       </div>
-      <div className="bg-dark mt-12 h-12 max-w-7xl mx-auto"></div>
+      {/* <div className="bg-dark mt-12 h-12 max-w-7xl mx-auto"></div> */}
     </section>
   );
 }

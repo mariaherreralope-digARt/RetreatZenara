@@ -8,27 +8,27 @@ export default function SNewsletterCollageReveal() {
     {
       src: "/images/collage3.png",
       alt: "Facial treatment",
-      className: "top-[10%] right-[20%] w-[200px]",
+      className: "top-[15%] right-[10%] md:right-[10%] w-[30vw]",
     },
     {
       src: "/images/collage2.png",
       alt: "Spa bathroom",
-      className: "left-[15%] top-[35%] w-[220px]",
+      className: "left-[5%] md:left-[18%] top-[15%] w-[30vw]",
     },
     {
       src: "/images/collage1.png",
       alt: "Clay pot",
-      className: "bottom-[0%] right-[5%] w-[350px]",
+      className: "bottom-[0%] right-[0%] md:right-[5%] w-[450px]",
     },
     {
       src: "/images/collage4.png",
       alt: "Relaxing face",
-      className: "bottom-[5%] left-[5%] w-[150px]",
+      className: "bottom-[5%] left-[5%] w-[450px]",
     },
   ];
 
   return (
-    <section className="relative bg-lighter py-24 flex justify-center items-center overflow-hidden">
+    <section className="relative bg-lighter py-24 flex justify-center items-center h-screen overflow-hidden">
       {/* Background images with animation */}
       <div className="absolute inset-0">
         {images.map((img, i) => (

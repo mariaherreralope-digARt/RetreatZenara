@@ -5,10 +5,10 @@ export default function HeroBorderLines() {
     <section className="relative bg-lighter overflow-hidden h-screen py-0">
       <div className="relative w-full mx-auto flex flex-col items-center  h-full ">
     <div
-      className="w-full h-64 md:h-1/2 px-10 md:px-30 z-0 
+      className="w-full h-1/2 px-10 md:px-30 z-0 
       bg-[url('/images/bkgMenu.png')] bg-cover bg-center max-w-l mx-auto"
     ></div>
-      <div className="relative flex flex-col items-center max-w-4xl  bg-light -mt-28  z-10 px-6 py-12 h-max mx-6">
+      <div className="relative flex flex-col items-center max-w-3xl md:max-w-4xl  bg-light -mt-28  z-10 md:px-6 py-12 h-max mx-6">
         {/* <div className="absolute inset-0  pointer-events-none before:content-[''] before:absolute before:inset-5 before:border before:border-[#d3c8af] before:pointer-events-none" /> */}
         {/* Top line */}
   <span className="absolute top-4 left-0 right-0 h-px bg-dark"></span>

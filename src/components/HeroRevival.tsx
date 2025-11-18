@@ -2,8 +2,8 @@ import Image from "next/image";
 
 export default function HeroSection() {
   return (
-    <section className="relative bg-lighter overflow-hidden py-20">
-      <div className="max-w-6xl mx-auto px-6 flex flex-col items-center text-center relative">
+    <section className="relative bg-light overflow-hidden py-20">
+      <div className="max-w-6xl mx-auto px-6 md:px-12 flex flex-col items-center text-center relative">
         {/* Label */}
         <p className="oversection text-dark mb-4 z-0">
           Wellness Retreats
@@ -11,10 +11,10 @@ export default function HeroSection() {
 
         {/* Large centered headline */}
         <h1 className="text-[6rem] sm:text-[8rem] md:text-[10rem] font-serif font-light text-dark/70 scale-y-120 transform leading-none tracking-[0.07em] z-30">
-          REVIVAL
+          ALLURE
         </h1>
 
-       <div className="relative grid grid-cols-1 md:grid-cols-3 items-center justify-items-center gap-4 -mt-16 z-10 w-full max-w-6xl">
+       <div className="relative grid grid-cols-1 lg:grid-cols-3 items-center justify-items-center gap-4 -mt-16 z-10 w-full max-w-6xl">
           {/* Left image */}
           <div className="relative w-48 h-48 md:w-48 md:h-48 bg-lighter overflow-hidden justify-self-end">
             <Image
@@ -36,11 +36,11 @@ export default function HeroSection() {
           </div>
 
           {/* Right text block */}
-          <div className="text-left justify-self-start w-48 md:w-56 md:h-72 flex flex-col justify-center">
+          <div className="text-left justify-self-start w-48 md:w-52 md:h-48 flex flex-col justify-center">
             <h2 className="title text-dark mb-4">
             Lorem ipsum dolor sit amet, consectetur
           </h2>
-            <p className="paragraph text-darker mb-4">
+            <p className="paragraph text-darker font-semibold mb-4">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
               eiusmod tempor. 
             </p>

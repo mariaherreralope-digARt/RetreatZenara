@@ -17,9 +17,9 @@ export default function NewComponentTrial({ paragraph }: { paragraph: string }) 
 
   return (
     <div
-      className="flex flex-wrap items-center justify-center paragraph
-      h-[100vh] max-w-[1280px] px-10 md:px-50
-      bg-dark text-lighter  "
+      className="flex flex-wrap items-center justify-center paragraph h-[50vh]
+      md:h-[100vh] max-w-full px-10 md:px-50
+      bg-dark pt-18 text-lighter  "
     >
       <p
         ref={container}

@@ -44,7 +44,7 @@ export default function Hero() {
       </video>
 
       {/* Dark overlay */}
-      <div className="absolute inset-0 bg-black/40" />
+      {/* <div className="absolute inset-0 bg-black/40" /> */}
 
       {/* Hero Content */}
       <div className="relative z-10 flex flex-col items-center justify-center h-full text-lighter text-center">

@@ -6,7 +6,7 @@ export default function Overlap2colPT() {
     <section className="relative bg-lighter py-20">
       <div className="max-w-6xl mx-auto grid md:grid-cols-2  items-center justify-center">
         {/* Left Image */}
-        <div className="relative w-[30em] aspect-square overflow-hidden ml-20">
+        <div className="relative w-[20em] md:w-[30em] aspect-square overflow-hidden ml-20">
           <Image
             src="/images/collage5.png"
             alt="Nature Scene"
@@ -18,7 +18,7 @@ export default function Overlap2colPT() {
         </div>
 
         {/* Right Box */}
-        <div className="relative bg-dark px-20 py-10 shadow-sm md:-ml-48 mr-20 z-10">
+        <div className="relative bg-dark px-20 py-10 shadow-sm ml-20 md:-ml-48 mr-20 z-10">
 
           <h3 className="oversection text-lighter mb-2 ">
             Nature and Calm

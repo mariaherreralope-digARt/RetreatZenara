@@ -17,8 +17,8 @@ export default function HeroHugeTextBottom() {
       </div> */}
 
       {/* HUGE Text at bottom */}
-      <h1 className="absolute bottom-0 left-1/2 -translate-x-1/2 z-10 
-      scale-y-125 font-heading tracking-tighter leading-[0.90] text-lighter/70
+      <h1 className="absolute bottom-30 md:bottom-0 left-1/2 -translate-x-1/2 z-10 scale-y-425
+      md:scale-y-125 font-heading tracking-tighter leading-[0.90] text-lighter/70
       text-[20vw] pointer-events-none select-none uppercase">
         inspiring
       </h1>

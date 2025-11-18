@@ -4,7 +4,8 @@ import { ModalProvider } from "@/context/ModalContext";
 import CookieConsentBanner from "@/components/LegalCookieConsentBanner";
 import GlobalModal from "@/components/ContactGlobalModal";
 import CustomCursor from "@/components/AddCustomCursor";
-import Navbar from "@/components/navbar/Navbar";
+// import Navbar from "@/components/navbar/Navbar";
+import NavBarLgLinksContact from "@/components/NavBarLgLinksContact";
 
 export const metadata: Metadata = {
   title: "Retiro de Bienestar",
@@ -20,7 +21,7 @@ export default function RootLayout({
     <html lang="es">
       <body className=" dark:bg-darker dark:text-lighter">
         <ModalProvider>
-        <Navbar />
+        <NavBarLgLinksContact />
           {children}
           <CookieConsentBanner />
           <GlobalModal />

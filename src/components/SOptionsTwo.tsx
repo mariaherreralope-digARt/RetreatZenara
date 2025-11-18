@@ -9,7 +9,7 @@ export default function OptionsTwo() {
    
 
       {/* LEFT SIDE - Content list */}
-      <div className="bg-light flex flex-col justify-center p-10 md:p-12 lg:p-16 ">
+      <div className="bg-lighter flex flex-col justify-center p-10 md:p-12 lg:p-16 ">
         <div className="space-y-12">
           {/* ITEM 1 */}
           <motion.div
@@ -89,14 +89,14 @@ export default function OptionsTwo() {
       </div>
 
          {/* RIGHT SIDE - Background image with overlay text */}
-      <div className="relative h-[500px] lg:h-auto">
+      <div className="relative h-[500px] lg:h-auto order-first lg:order-last">
         <Image
           src="/images/MindBodyVisionBkg.png" // background image
           alt="family by the pool"
           fill
           className="object-cover"
         />
-        <div className="absolute inset-0 bg-black/40" />
+        <div className="absolute inset-0 bg-black/30" />
         <motion.div
           className="absolute inset-0 flex items-center justify-center p-8"
           initial={{ opacity: 0, y: 30 }}
@@ -109,7 +109,7 @@ export default function OptionsTwo() {
           </h2>
         </motion.div>
       </div>
-      <div className="bg-dark  h-12 max-w-7xl mx-auto"></div>
+      {/* <div className="bg-dark  h-12 max-w-7xl mx-auto"></div> */}
 
     </section>
   );

@@ -17,12 +17,12 @@ const ContactButton = ({ isMenuOpen, scrolled, variant = "desktop" }: ContactBut
     ? "bg-btt text-light"
     : scrolled
       ? "bg-transparent text-btt border border-btt"
-      : "bg-light text-btt";
+      : "bg-light text-btt  border  border-dark";
 
   return (
     <div
       className={`z-30 ${
-        variant === "desktop" ? "flex-1 justify-end hidden md:flex" : "block md:hidden"
+        variant === "desktop" ? " justify-end hidden md:flex" : "block md:hidden"
       }`}
     >
       <motion.button
@@ -31,7 +31,7 @@ const ContactButton = ({ isMenuOpen, scrolled, variant = "desktop" }: ContactBut
         animate={{ opacity: 1, scale: 1 }}
         whileHover="hover"
         variants={{}}
-        className={`relative overflow-hidden text-sm px-6 py-2.5 group uppercase transition-colors duration-300 ${baseClass}`}
+        className={`relative overflow-hidden text-xs px-4 py-1.5 group uppercase transition-colors duration-300 ${baseClass}`}
       >
         {/* background animation layer */}
         <motion.span
@@ -54,7 +54,7 @@ const ContactButton = ({ isMenuOpen, scrolled, variant = "desktop" }: ContactBut
               ? "group-hover:text-btt"
               : scrolled
                 ? "text-btt group-hover:text-light"
-                : "text-darker group-hover:text-light"
+                : "text-dark group-hover:text-light"
           }`}
         >
           Contact

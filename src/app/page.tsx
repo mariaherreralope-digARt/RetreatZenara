@@ -30,16 +30,17 @@ import VerticalButton from "@/components/AddVerticalButton";
 import GoTopButton from "@/components/AddGoTopButton";
 import TextParallax from "@/components/TextParallax";
 import TextParallaxQA from "@/components/TextParallaxQA";
+import TextOsTPBtn from "@/components/TextOsTPBtn";
 
 
-const paragraph =
-  "Your journey deserves guidance you can trust, an environment that feels safe, and a space designed with intention.";
+// const paragraph =
+//   "Your journey deserves guidance you can trust, an environment that feels safe, and a space designed with intention.";
 
-  const paragraph1 =
-  "Every journey is unique — that’s why we offer retreats designed to nurture mind, body, and spirit in different ways.";
+//   const paragraph1 =
+//   "Every journey is unique — that’s why we offer retreats designed to nurture mind, body, and spirit in different ways.";
 
-  const paragraph2 =
-  "We know you may have questions — here are clear answers to help you feel confident before beginning your journey with us.";
+//   const paragraph2 =
+//   "We know you may have questions — here are clear answers to help you feel confident before beginning your journey with us.";
    
 
  
@@ -58,30 +59,37 @@ const lenis = new Lenis({
   return (
     <main className="relative min-h-screen overflow-x-hidden">
       {/* Background gradient effect */}
-      <div className="absolute -top-28 -left-28 w-[500px] h-[500px] bg-gradient-to-tr from-red-800/20 to-yellow-600/20 rounded-full blur-[80px] -z-10"></div>
+      {/* <div className="absolute -top-28 -left-28 w-[500px] h-[500px] bg-gradient-to-tr from-red-800/20 to-yellow-600/20 rounded-full blur-[80px] -z-10"></div> */}
 
-    <HeroHugeTextBottom />
     <HeroRevival /> 
-    <HeroCards />
-    <Overlap2colPT />
-    <OverlapPopularPosts />
-    <SHeadingSVG />
+    {/* <HeroHugeTextBottom /> */}
+    {/* <HeroCards /> */}
+
+    <TextOsTPBtn />
     <SOverlapPortfolioGhost />
-    <SFeaturesDivideLineIcons />
-    <SNewsletterCollageReveal />
-    <SOverlapVerticalTextBox />
+
+    {/* <Overlap2colPT /> */}
+    {/* <SHeadingSVG /> */}
       <Hero />
-      <OurPhilosophy />
-      <NewComponentTrial paragraph={paragraph} />
-      <WhyUs />
-      <TextParallax paragraph1={paragraph1} />
+
+    <OverlapPopularPosts />
+    {/* <SNewsletterCollageReveal /> */}
+    {/* <SOverlapVerticalTextBox /> */}
+      {/* <OurPhilosophy /> */}
+      {/* <NewComponentTrial paragraph={paragraph} /> */}
+      {/* <WhyUs /> */}
+      {/* <TextParallax paragraph1={paragraph1} /> */}
+    <SFeaturesDivideLineIcons />
+
       <OptionsOne />
+
       <OptionsTwo />
-      <TextParallaxQA paragraph2={paragraph2} />
-      <QASection />
-      <Collage />
-      <TestimonialsSection />
+      {/* <TextParallaxQA paragraph2={paragraph2} /> */}
       <Newsletter />
+
+      {/* <QASection /> */}
+      {/* <Collage /> */}
+      <TestimonialsSection />
       <Footer />
       <GoTopButton />
       <VerticalButton label="Book Our Next Retreat" href="/about" />
