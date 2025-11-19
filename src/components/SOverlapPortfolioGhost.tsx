@@ -3,7 +3,7 @@ import Image from 'next/image';
 // aspect squeare forced 
 export default function SOverlapPortfolioGhost() {
   return (
-    <section className="relative bg-gradient-to-b from-transparent via-light/50 to-lighter md:pb-16">
+    <section className="relative bg-gradient-to-b from-transparent via-light/50 to-transparent md:pb-0 overflow-visible ">
         <div className="flex flex-col items-center text-center px-16 sm:px-6 lg:px-8 max-w-4xl mx-auto">
          <p className="oversection text-darker mb-6">
           Upcoming Retreats
@@ -46,7 +46,7 @@ export default function SOverlapPortfolioGhost() {
           </button> */}
         </div>
          {/* Right Image */}
-        <div className="relative w-[700px] h-[350px] overflow-hidden md:-ml-42 ">
+        <div className="relative w-[700px] h-[350px] overflow-clip md:-ml-42 ">
           <Image
             src="/images/collage9.png"
             alt="Nature Scene"
@@ -89,7 +89,7 @@ export default function SOverlapPortfolioGhost() {
           </button> */}
         </div>
          {/* Left Image */}
-        <div className="relative w-[700px] h-[350px] overflow-hidden  ">
+        <div className="relative w-[700px] h-[350px] overflow-clip  ">
           <Image
             src="/images/body.png"
             alt="Nature Scene"

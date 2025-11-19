@@ -4,9 +4,9 @@ import { HiArrowRight } from "react-icons/hi2";
 
 export default function Newsletter() {
   return (
-    <section className="max-w-6xl mx-auto  px-0 ">
-      <div className="bg-gradient-to-r bg-lighter overflow-hidden">
-        <div className="relative px-16 pb-16 ">
+    <section className="relative  w-full md:h-[70vh] px-0 overflow-visible pt-8">
+<div className="bg-texture-center  absolute inset-0 -top-16 md:-top-20 pointer-events-none "></div>        
+<div className="relative max-w-6xl mx-auto z-20 px-16 pb-16 ">
           <div className="relative h-auto md:h-[50vh] flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-12">
             {/* Left content */}
             <div className=" max-w-lg text-center md:text-left">
@@ -33,7 +33,7 @@ export default function Newsletter() {
             </div>
           </div>
         </div>
-      </div>
+      
     </section>
   );
 }

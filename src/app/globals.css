@@ -51,7 +51,7 @@ html, body {
     --color-btt: #; 
   */
    --color-dark: #A16B55; /*brown*/
-    --color-darker: #B2AFA9; /*dark gray*/
+    --color-darker: #595959; /*dark gray*/
     --color-light: #E1CFBB; /*pink*/
     --color-lighter: #F6F6F6; /*light gray*/
     --color-accent: #;
@@ -140,4 +140,28 @@ html, body {
   background-position: center;
   background-size: cover;
 }
+}
+.bg-texture {
+  /* position: absolute; */
+  inset: 0;
+  background-image: url('/svg/sacred-geometry.svg');
+  background-size: 70%; /* adjust based on taste */
+  background-position: left;
+  margin-left: -30%;
+  background-repeat: no-repeat;
+  opacity: 0.25; /* subtle luxury */
+  pointer-events: none; /* prevents input clicks hijacking */
+  /* z-index: ; */
+}
+.bg-texture-center {
+  /* position: absolute; */
+  inset: 0;
+  background-image: url('/svg/sacred-geometry.svg');
+  background-size: 110%; /* adjust based on taste more than 110 became full opacity */
+  background-position: center;
+  margin-top: -15%; /*this was the solution. it has to be more than 10*/
+  background-repeat: no-repeat;
+  opacity: 0.15; /* subtle luxury */
+  pointer-events: none; /* prevents input clicks hijacking */
+  /* z-index: ; */
 }

@@ -16,7 +16,7 @@ export default function Navbar() {
 
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all ${scrolled ? "bg-light/30 backdrop-blur" : "bg-light"}`}>
-      <div className="flex items-center px-16 h-12">
+      <div className="flex items-center px-16 h-16">
 
         {/* Logo */}
         <a href="/">
@@ -29,11 +29,14 @@ export default function Navbar() {
           />
         </a>
 
-        {/* Desktop Links */}
-        <div className="hidden md:flex gap-8 font-body  text-xs items-center justify-end pr-12 flex-1 text-dark ">
+        {/* Desktop Links Experiences nicely groups your 6 retreat types.Upcoming leads to your retreat event cards.Spaces ties to your section with nature, rooms, community, healing.*/}
+        <div className="hidden md:flex gap-4 paragraph  text-xs text-dark items-center justify-end pr-12 flex-1  ">
           <a className="">Home</a>
+          <a className="">Experiences</a>
+          <a className="">Spaces</a>
+          <a className="">Upcoming</a>
           <a className="">About</a>
-          <a className="">Services</a>
+          {/* <a className="">Contact</a> */}
         </div>
 
         {/* Desktop Contact Button */}
@@ -48,9 +51,12 @@ export default function Navbar() {
       {/* Mobile Menu */}
       {isMenuOpen && (
         <div className="md:hidden bg-white px-6 py-4 space-y-4">
-          <a className="block">Home</a>
-          <a className="block">About</a>
-          <a className="block">Services</a>
+          <a className="">Home</a>
+          <a className="">Experiences</a>
+          <a className="">Spaces</a>
+          <a className="">Upcoming</a>
+          <a className="">About</a>
+          <a className="">Contact</a>
 
           {/* Mobile Contact Button */}
           <ContactButton isMenuOpen={isMenuOpen} scrolled={scrolled} variant="mobile" />

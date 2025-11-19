@@ -31,7 +31,7 @@ const ContactButton = ({ isMenuOpen, scrolled, variant = "desktop" }: ContactBut
         animate={{ opacity: 1, scale: 1 }}
         whileHover="hover"
         variants={{}}
-        className={`relative overflow-hidden text-xs px-4 py-1.5 group uppercase transition-colors duration-300 ${baseClass}`}
+        className={`relative overflow-hidden text-xs px-6 py-2.5 group uppercase transition-colors duration-300 ${baseClass}`}
       >
         {/* background animation layer */}
         <motion.span
@@ -57,7 +57,7 @@ const ContactButton = ({ isMenuOpen, scrolled, variant = "desktop" }: ContactBut
                 : "text-dark group-hover:text-light"
           }`}
         >
-          Contact
+          BOOK NOW
         </span>
       </motion.button>
     </div>

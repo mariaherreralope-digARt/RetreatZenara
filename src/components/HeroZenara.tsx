@@ -5,13 +5,13 @@ export default function HeroSection() {
     <section className="relative bg-light overflow-hidden py-20">
       <div className="max-w-6xl mx-auto px-6 md:px-12 flex flex-col items-center text-center relative">
         {/* Label */}
-        <p className="oversection text-dark mb-4 z-0">
+        <p className="oversection text-dark mb-0 z-0">
           Return to Yourself
         </p>
 
-        {/* Large centered headline */}
-        <h1 className="text-[6rem] sm:text-[8rem] md:text-[10rem] font-serif font-light text-dark/70 scale-y-120 transform leading-none tracking-[0.07em] z-30">
-          ZENARA
+        {/* Large centered headline scale-y-120 tracking-[0.07em] uppercase md:text-[10rem]*/}
+        <h1 className="text-[6rem] sm:text-[8rem] md:text-[18rem] font-serif font-light text-dark/70  transform leading-none -tracking-[0.05em] z-30 -mt-12">
+          zenara
         </h1>
 
        <div className="relative grid grid-cols-1 lg:grid-cols-3 items-center justify-items-center gap-4 -mt-16 z-10 w-full max-w-6xl">

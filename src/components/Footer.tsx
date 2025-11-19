@@ -35,13 +35,13 @@ const Footer: FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-6 lg:gap-12">
           <div className="lg:col-span-4">
             <div className="flex gap-2 items-center mb-4">
-              {/* <Image
+              <Image
                 src="/images/logo-footer.png"
                 alt="Logo Luxury Retreats"
                 width={48}
                 height={48}
                 className="h-12 rounded-lg relative z-10 hover:scale-[1.02] transition-transform duration-300 object-contain"
-              /> */}
+              />
               <span className="oversection text-dark">
                 Zenara Retreats
               </span>
