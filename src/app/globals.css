@@ -127,7 +127,7 @@ html, body {
 }
 
 .oversection {
-  @apply uppercase tracking-[0.3em] text-sm font-semibold font-body;
+  @apply uppercase tracking-[0.3em] text-xs md:text-sm font-semibold font-body;
 }
 
 .parallax-text {

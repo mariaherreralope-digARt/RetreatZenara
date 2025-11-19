@@ -3,7 +3,7 @@ export default function OverlapPopularPosts() {
   return (
     <section className="relative h-auto pb-16 bg-lighter flex flex-col items-center pt-16">
       {/* title */}
-       <div className="flex flex-col items-center text-center px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
+       <div className="flex flex-col items-center text-center px-16 sm:px-6 lg:px-8 max-w-4xl mx-auto">
          <p className="oversection text-darker mb-6">
           Our Spaces
         </p>
@@ -20,7 +20,7 @@ export default function OverlapPopularPosts() {
 
 <div className="relative grid md:grid-cols-2 gap-8 md:pb-8 max-w-6xl mx-auto">
   {/* left */}
-  <div className="relative flex items-center justify-center mb-0 md:mb-0 md:w-[40vw]">
+  <div className="relative flex flex-col items-center justify-center mb-0 md:mb-0  md:w-[40vw]">
    <div className="relative w-full aspect-[16/9] overflow-hidden ">
   <Image 
     src="/images/collage6.png"
@@ -29,8 +29,8 @@ export default function OverlapPopularPosts() {
     className="object-cover"
   />
 </div>
-    <div className="bg-light py-4 px-6 flex flex-col items-center text-center 
-            mt-4 md:absolute md:self-end md:-mb-8 md:mx-8">
+    <div className="bg-light py-4 px-16 md:px-6 flex flex-col items-center text-center 
+            mt-4 md:absolute md:self-end md:-mb-48 md:mx-8">
 
       <h3 className="title-italic-boxed not-italic mb-4 text-dark">Nature Surroundings</h3>
       <p className="paragraph pb-4 text-center text-dark">Quiet trails, open landscapes, and grounding natural beauty that reconnect you with the earth.</p>
@@ -38,7 +38,7 @@ export default function OverlapPopularPosts() {
     </div>
   </div>
   {/* right */}
- <div className="relative flex items-center justify-center mb-12 md:mb-0 md:w-[40vw]">
+ <div className="relative flex flex-col items-center justify-center mb-12 md:mb-0 md:w-[40vw]">
   <div className="relative w-full aspect-[16/9] overflow-hidden ">
   <Image 
     src="/images/collage2.png"
@@ -47,8 +47,8 @@ export default function OverlapPopularPosts() {
     className="object-cover"
   />
 </div>
-    <div className="bg-light py-4 px-6 flex flex-col items-center text-center 
-            mt-4 md:absolute md:self-end md:-mb-8 md:mx-8">
+    <div className="bg-light py-4 px-16 md:px-6 flex flex-col items-center text-center 
+            mt-4 md:absolute md:self-end md:-mb-48 md:mx-8">
 
       <h3 className="title-italic-boxed not-italic mb-4 text-dark">Accommodation</h3>
       <p className="paragraph pb-4 text-center text-dark">Calming, minimalist rooms designed for rest, comfort, and gentle nervous-system reset.</p>
@@ -62,7 +62,7 @@ export default function OverlapPopularPosts() {
 
 <div className="relative grid md:grid-cols-2 gap-8 pb-8 max-w-6xl mx-auto">
   {/* left */}
-  <div className="relative flex items-center justify-center mb-0 md:mb-0 md:w-[40vw]">
+  <div className="relative flex flex-col items-center justify-center mb-0 md:mb-0 md:w-[40vw]">
    <div className="relative w-full aspect-[16/9] overflow-hidden ">
   <Image 
     src="/images/collage8.png"
@@ -71,15 +71,15 @@ export default function OverlapPopularPosts() {
     className="object-cover"
   />
 </div>
-    <div className="bg-light py-4 px-6 flex flex-col items-center text-center 
-            mt-4 md:absolute md:self-end md:-mb-8 md:mx-8">
+    <div className="bg-light py-4 px-16 md:px-6 flex flex-col items-center text-center 
+            mt-4 md:absolute md:self-end md:-mb-48 md:mx-8">
 
       <h3 className="title-italic-boxed not-italic mb-4 text-dark">Community Spaces</h3>
       <p className="paragraph pb-4 text-center text-dark">Warm gathering areas for connection, workshops, and meaningful shared moments.</p>
       <button className=" btn-squared ">Learn More</button>
     </div>
   </div>
- <div className="relative flex items-center justify-center mb-12 md:mb-0 md:w-[40vw]">
+ <div className="relative flex flex-col items-center justify-center mb-12 md:mb-0 md:w-[40vw]">
     <div className="relative w-full aspect-[16/9] overflow-hidden ">
   <Image 
     src="/images/luxury.png"
@@ -88,8 +88,8 @@ export default function OverlapPopularPosts() {
     className="object-cover"
   />
 </div>
-    <div className="bg-light py-4 px-6 flex flex-col items-center text-center 
-            mt-4 md:absolute md:self-end md:-mb-8 md:mx-8">
+    <div className="bg-light py-4 px-16 md:px-6 flex flex-col items-center text-center 
+            mt-4 md:absolute md:self-end md:-mb-48 md:mx-8">
 
       <h3 className="title-italic-boxed not-italic mb-4 text-dark">Healing Rooms</h3>
       <p className="paragraph pb-4 text-center text-dark">Still, peaceful spaces for meditation, breathwork, and transformative inner work.</p>

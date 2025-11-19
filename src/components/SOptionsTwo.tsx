@@ -34,7 +34,7 @@ Ideal for those seeking mental clarity, calm, and emotional balance.
               alt="content calendar"
               width={120}
               height={120}
-              className="ded-full object-cover"
+              className="hidden md:block object-cover"
             />
           </motion.div>
 
@@ -62,7 +62,7 @@ Ideal for those seeking mental clarity, calm, and emotional balance.
               alt="posting schedule"
               width={120}
               height={120}
-              className=" object-cover"
+              className="hidden md:block object-cover"
             />
           </motion.div>
 
@@ -90,7 +90,8 @@ Ideal for those seeking mental clarity, calm, and emotional balance.
               alt="content creation"
               width={120}
               height={120}
-              className=" object-cover"
+              className="hidden md:block object-cover"
+
             />
           </motion.div>
         </div>

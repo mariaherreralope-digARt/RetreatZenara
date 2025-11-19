@@ -5,7 +5,7 @@ export default function HeroSection() {
     <section className="relative bg-light overflow-hidden py-20">
       <div className="max-w-6xl mx-auto px-6 md:px-12 flex flex-col items-center text-center relative">
         {/* Label */}
-        <p className="oversection text-dark mb-0 z-0">
+        <p className="oversection text-dark mb-6 md:mb-0 z-0">
           Return to Yourself
         </p>
 
@@ -16,7 +16,7 @@ export default function HeroSection() {
 
        <div className="relative grid grid-cols-1 lg:grid-cols-3 items-center justify-items-center gap-4 -mt-16 z-10 w-full max-w-6xl">
           {/* Left image */}
-          <div className="relative w-48 h-48 md:w-48 md:h-48 bg-lighter overflow-hidden justify-self-end">
+          <div className="relative w-48 h-48  mt-8 md:mt-0 md:w-48 md:h-48 bg-lighter overflow-hidden justify-self-end">
             <Image
               src="/images/collage6.png"
               alt="Best selling wellness retreat"

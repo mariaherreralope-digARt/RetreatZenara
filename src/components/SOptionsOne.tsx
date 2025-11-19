@@ -55,7 +55,8 @@ export default function OptionsOne() {
               alt="content calendar"
               width={120}
               height={120}
-              className="ded-full object-cover"
+              className="hidden md:block object-cover"
+
             />
           </motion.div>
 
@@ -84,7 +85,7 @@ export default function OptionsOne() {
               alt="posting schedule"
               width={120}
               height={120}
-              className=" object-cover"
+              className="hidden md:block object-cover"
             />
           </motion.div>
 
@@ -112,7 +113,7 @@ export default function OptionsOne() {
               alt="content creation"
               width={120}
               height={120}
-              className=" object-cover"
+              className="hidden md:block object-cover"
             />
           </motion.div>
         </div>
