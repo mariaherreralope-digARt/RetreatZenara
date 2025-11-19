@@ -5,11 +5,11 @@ import Image from "next/image";
 
 export default function OptionsOne() {
   return (
-    <section id="retreats" className="w-full grid grid-cols-1 lg:grid-cols-2">
+    <section id="retreats" className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2">
       {/* LEFT SIDE - Background image with overlay text */}
       <div className="relative h-[500px] lg:h-auto">
         <Image
-          src="/images/family.png" // background image
+          src="/images/transformative.png" // background image
           alt="family by the pool"
           fill
           className="object-cover"
@@ -23,14 +23,14 @@ export default function OptionsOne() {
           viewport={{ once: true }}
         >
           <h2 className="text-lighter text-3xl md:text-4xl lg:text-5xl font-extralight uppercase font-heading leading-tight text-center max-w-md">
-           OUR <br />Empowered Living <br />RETREATS
+           OUR <br />Transformative <br />RETREATS
           </h2>
         </motion.div>
       </div>
 
       {/* RIGHT SIDE - Content list */}
-      <div className="bg-lighter flex flex-col justify-center p-10 md:p-12 lg:p-16 ">
-        <div className="space-y-12">
+      <div className="bg-lighter flex flex-col justify-center p-16 md:p-12 lg:p-16 ">
+        <div className="space-y-6">
           {/* ITEM 1 */}
           <motion.div
             className="flex items-center justify-between gap-6 "
@@ -41,10 +41,13 @@ export default function OptionsOne() {
           >
             <div className="flex-1">
               <h3 className="bg-dark px-4 py-2 inline-block title-italic-boxed  mb-2">
-                Couples Connection
+                Earth Connection
               </h3>
-              <p className="text-darker paragraph">
-                A retreat to deepen intimacy, communication, and love in breathtaking, private settings.
+              <p className="text-darker md:pt-2 md:pr-8 paragraph">
+                Forest walks, grounding practices, and outdoor meditations that bring you back to nature’s rhythm.
+              </p>
+              <p className="text-darker md:pt-2 md:pr-8 paragraph">
+                You’ll leave feeling rooted, centered, and deeply rebalanced.
               </p>
             </div>
             <Image
@@ -66,10 +69,14 @@ export default function OptionsOne() {
           >
             <div className="flex-1">
               <h3 className="bg-dark px-4 py-2 inline-block title-italic-boxed  mb-2">
-               Women’s Empowerment
+               Silent Renewal
               </h3>
-              <p className="text-darker paragraph">
-                Created to empower women through coaching, sisterhood, and practices that awaken confidence and strength.
+              <p className="text-darker md:pt-2 md:pr-8 paragraph">
+                A restorative retreat focused on silence, slow living, and nervous-system resetting.
+              </p>
+         
+              <p className="text-darker md:pt-2 md:pr-8 paragraph">
+                Created for anyone feeling overwhelmed or craving deep inner rest.
               </p>
             </div>
             <Image
@@ -91,10 +98,13 @@ export default function OptionsOne() {
           >
             <div className="flex-1">
               <h3 className="bg-dark px-4 py-2 inline-block title-italic-boxed  mb-2">
-                Wellness & Longevity
+                Inspired Flow
               </h3>
-              <p className="text-darker paragraph">
-                Programs centered on vitality, sleep optimization, and holistic living practices that extend health and energy.
+              <p className="text-darker md:pt-2 md:pr-8 paragraph">
+                Expression sessions and creative exploration designed to unlock imagination and inner artistry.
+              </p>
+              <p className="text-darker md:pt-2 md:pr-8 paragraph">
+                Perfect for releasing blocks and rediscovering inspiration.
               </p>
             </div>
             <Image

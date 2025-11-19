@@ -6,12 +6,12 @@ export default function HeroSection() {
       <div className="max-w-6xl mx-auto px-6 md:px-12 flex flex-col items-center text-center relative">
         {/* Label */}
         <p className="oversection text-dark mb-4 z-0">
-          Wellness Retreats
+          Return to Yourself
         </p>
 
         {/* Large centered headline */}
         <h1 className="text-[6rem] sm:text-[8rem] md:text-[10rem] font-serif font-light text-dark/70 scale-y-120 transform leading-none tracking-[0.07em] z-30">
-          ALLURE
+          ZENARA
         </h1>
 
        <div className="relative grid grid-cols-1 lg:grid-cols-3 items-center justify-items-center gap-4 -mt-16 z-10 w-full max-w-6xl">
@@ -38,14 +38,13 @@ export default function HeroSection() {
           {/* Right text block */}
           <div className="text-left justify-self-start w-48 md:w-52 md:h-48 flex flex-col justify-center">
             <h2 className="title text-dark mb-4">
-            Lorem ipsum dolor sit amet, consectetur
+            Where Stillness Becomes Strength
           </h2>
             <p className="paragraph text-darker font-semibold mb-4">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-              eiusmod tempor. 
+              A place to reconnect with your body, mind, and soul. 
             </p>
             <button className="btn-squared self-start">
-              View Portfolio
+              Explore Retreats
             </button>
           </div>
         </div>

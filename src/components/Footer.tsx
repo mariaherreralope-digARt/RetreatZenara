@@ -43,7 +43,7 @@ const Footer: FC = () => {
                 className="h-12 rounded-lg relative z-10 hover:scale-[1.02] transition-transform duration-300 object-contain"
               /> */}
               <span className="oversection text-dark">
-                Boleh Luxury Retreats
+                Zenara Retreats
               </span>
             </div>
             <p className="text-dark mb-6 paragraph md:w-3/4">

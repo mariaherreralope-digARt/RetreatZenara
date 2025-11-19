@@ -3,34 +3,33 @@ import { motion } from "framer-motion";
 
 export default function TextOsTPBtn() {
   return (
-  <section className="relative bg-lighter py-24 flex justify-center items-center h-[70vh] overflow-hidden pb-16">
+  <section className="relative bg-lighter pb-24 flex justify-center items-center h-auto overflow-hidden pb-16">
       <motion.div
-        className="relative z-10  text-dark text-center px-10 py-8 max-w-2xl "
+        className="relative z-10  text-dark text-center px-16 md:px-10 py-8  mx-auto md:max-w-4xl "
         initial={{ scale: 0.9, opacity: 0, y: 20 }}
         animate={{ scale: 1, opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
       >
         <p className="oversection text-darker mb-6">
-          Visit our studio
+          Zen Aura
         </p>
         <h2 className="heading text-dark md:text-3xl  mb-6">
-          Experience the Art of Beauty and Wellness
+          A Sanctuary for Inner Alignment
         </h2>
         <p className="text-darker mb-8 paragraph leading-relaxed font-semibold">
-          Whether you're juggling remote work, building a business, or just
-          trying to get through a to-do list without burning out, we’ve got the
-          support and tools to help you thrive.<br />
+          Zenara comes from “Zen” and “Aura” — the meeting point of calm awareness and the natural energy that surrounds us. We believe that transformation begins when you return to your inner stillness.
        
         </p>
         <p className="text-darker mb-8 paragraph leading-relaxed font-semibold">
-          Whether you're juggling remote work, building a business, or just
-          trying to get through a to-do list without burning out, we’ve got the
-          support and tools to help you thrive.<br />
+          At Zenara, we follow a simple philosophy: balance, presence, and conscious living. Every retreat is designed to help you slow down, reconnect, and realign with who you truly are—beyond stress, noise, and obligations.
        
         </p>
-
+        <p className="text-darker mb-8 paragraph leading-relaxed font-semibold">
+          Our mission is to create modern retreat experiences that feel both grounding and expansive. Through mindful practices, community connection, and nature-based immersion, Zenara guides you toward genuine clarity, renewal, and inner peace.
+       
+        </p>
         <button className="btn-squared  ">
-          Our Beauty Studio
+          Discover Our Philosophy
         </button>
       </motion.div>
       </section>

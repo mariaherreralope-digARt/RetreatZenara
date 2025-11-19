@@ -4,10 +4,10 @@ import { HiArrowRight } from "react-icons/hi2";
 
 export default function Newsletter() {
   return (
-    <section className="mx-auto   px-0 ">
+    <section className="max-w-6xl mx-auto  px-0 ">
       <div className="bg-gradient-to-r bg-lighter overflow-hidden">
-        <div className="relative px-16 py-16  md:py-15">
-          <div className="relative h-[50vh] flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-12">
+        <div className="relative px-16 pb-16 ">
+          <div className="relative h-auto md:h-[50vh] flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-12">
             {/* Left content */}
             <div className=" max-w-lg text-center md:text-left">
               <h2 className=" mb-4 text-dark title">
