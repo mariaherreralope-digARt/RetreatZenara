@@ -1,10 +1,11 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { motion } from "framer-motion";
 import ContactButton from "@/components/navbar/ContactButton";
 import Image from "next/image";
 
-export default function Navbar() {
+export default function NavBarLgLinksContact() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
@@ -13,55 +14,130 @@ export default function Navbar() {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+  const [activeLink, setActiveLink] = useState("#home");
+
+  // NEW grouped nav system
+  const leftLinks = [
+    { href: "#experiences", label: "Experiences" },
+    { href: "#spaces", label: "Spaces" },
+    { href: "#upcoming", label: "Upcoming" },
+  ];
+
+  const rightLinks = [
+    { href: "#method", label: "Our Method"},
+    { href: "#about", label: "About" },
+    { href: "#home", label: "Home" },
+  ];
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all ${scrolled ? "bg-light/30 backdrop-blur" : "bg-light"}`}>
-      <div className="flex items-center px-16 h-16">
+    <motion.nav
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 2 }}
+      className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${
+        scrolled ? "bg-light/50 backdrop-blur shadow-md" : "bg-transparent"
+      }`}
+    >
+      <div className="flex items-center justify-between px-6 py-2 w-full">
 
-        {/* Logo */}
-        <a href="/">
-          <Image
-            src="/images/logo.png"
-            width={150}
-            height={64} 
-            className="h-16 w-auto"
-            alt="Logo"
-          />
-        </a>
+        {/* LEFT GROUP: Logo + Left Links */}
+        <div className="flex items-center gap-10">
+          {/* Logo */}
+          <a href="/">
+            <Image
+              src="/images/logo.png"
+              width={150}
+              height={64}
+              className="h-16 w-auto -mt-2"
+              alt="Logo"
+            />
+          </a>
 
-        {/* Desktop Links Experiences nicely groups your 6 retreat types.Upcoming leads to your retreat event cards.Spaces ties to your section with nature, rooms, community, healing.*/}
-        <div className="hidden md:flex gap-4 paragraph  text-xs text-dark items-center justify-end pr-12 flex-1  ">
-          <a className="">Home</a>
-          <a className="">Experiences</a>
-          <a className="">Spaces</a>
-          <a className="">Upcoming</a>
-          <a className="">About</a>
-          {/* <a className="">Contact</a> */}
+          {/* Left Navigation Links */}
+          <div className="hidden md:flex items-center gap-8 text-dark text-sm">
+            {leftLinks.map((link, i) => (
+              <a
+  key={i}
+  href={link.href}
+  onClick={() => setActiveLink(link.href)}
+  className="relative hover:text-primary transition"
+>
+  {link.label}
+  <span
+    className={`absolute left-0 -bottom-1 h-[2px] w-full bg-dark transition-all duration-500 origin-left ${
+      activeLink === link.href ? "scale-100" : "scale-0 group-hover:scale-100"
+    }`}
+  ></span>
+</a>
+
+            ))}
+          </div>
         </div>
 
-        {/* Desktop Contact Button */}
-        <ContactButton isMenuOpen={isMenuOpen} scrolled={scrolled} variant="desktop" />
+        {/* RIGHT GROUP: Right Links + Contact Button */}
+        <div className="hidden  md:flex items-center gap-8 text-dark text-sm">
+          {rightLinks.map((link, i) => (
+            <a
+  key={i}
+  href={link.href}
+  onClick={() => setActiveLink(link.href)}
+  className="relative hover:text-primary transition"
+>
+  {link.label}
+  <span
+    className={`absolute left-0 -bottom-1 h-[2px] w-full bg-dark transition-all duration-500 origin-left ${
+      activeLink === link.href ? "scale-100" : "scale-0 group-hover:scale-100"
+    }`}
+  ></span>
+</a>
 
-        {/* Mobile Menu Button */}
-        <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="md:hidden ">
-          {isMenuOpen ? "X" : "Menu"}
+          ))}
+
+          {/* Contact Button */}
+          <ContactButton
+            isMenuOpen={isMenuOpen}
+            scrolled={scrolled}
+            variant="desktop"
+          />
+        </div>
+
+        {/* MOBILE TOGGLE */}
+        <button
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+          className="md:hidden text-dark text-lg"
+        >
+          {isMenuOpen ? "✕" : "☰"}
         </button>
       </div>
 
-      {/* Mobile Menu */}
+      {/* MOBILE MENU */}
       {isMenuOpen && (
-        <div className="md:hidden bg-white px-6 py-4 space-y-4">
-          <a className="">Home</a>
-          <a className="">Experiences</a>
-          <a className="">Spaces</a>
-          <a className="">Upcoming</a>
-          <a className="">About</a>
-          <a className="">Contact</a>
+        <motion.div
+          initial={{ opacity: 0, height: 0 }}
+          animate={{ opacity: 1, height: "auto" }}
+          transition={{ duration: 0.4 }}
+          className="absolute right-0 md:hidden bg-white w-1/2 px-6 py-4 space-y-4"
+        >
+          {[...leftLinks, ...rightLinks].map((link, i) => (
+            <a key={i} href={link.href} className="block text-dark">
+              {link.label}
+              {/* Hover + Active underline */}
+              {/* <span
+                className={`absolute left-0 -bottom-1 h-[2px] w-full bg-dark transition-all duration-300 origin-left ${
+                  activeLink === link.href ? "scale-100" : "scale-0 group-hover:scale-100"
+                }`}
+              ></span> */}
+            </a>
+            
+          ))}
 
-          {/* Mobile Contact Button */}
-          <ContactButton isMenuOpen={isMenuOpen} scrolled={scrolled} variant="mobile" />
-        </div>
+          <ContactButton
+            isMenuOpen={isMenuOpen}
+            scrolled={scrolled}
+            variant="mobile"
+          />
+        </motion.div>
       )}
-    </nav>
+    </motion.nav>
   );
 }

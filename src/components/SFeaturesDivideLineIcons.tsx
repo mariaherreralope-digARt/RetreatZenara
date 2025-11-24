@@ -1,4 +1,5 @@
 import { Trash2, HeartPulse, SplitSquareHorizontal, Lightbulb, Leaf, MapPin } from "lucide-react";
+import { section } from "motion/react-client";
 
 type Feature = {
   icon: React.ReactNode;
@@ -37,7 +38,8 @@ const features: Feature[] = [
 
 export default function SFeaturesDivideLineIcons() {
   return (
-    <div className=" bg-gradient-to-b from-transparent via-light/50 to-lighter py-16 md:pt-24 ">
+    <section id="method">
+    <div className=" bg-gradient-to-b from-transparent via-light/50 to-lighter py-16 pt-24 ">
       <div className="flex flex-col items-center text-center px-16 sm:px-6 lg:px-8 max-w-4xl mx-auto">
          <p className="oversection text-darker mb-6 ">
           Why It Works
@@ -63,5 +65,6 @@ export default function SFeaturesDivideLineIcons() {
       </div>
       <div className="absolute inset-0  pointer-events-none" />
     </div>
+    </section>
   );
 }

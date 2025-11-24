@@ -1,7 +1,7 @@
 import Image from "next/image";
 export default function OverlapPopularPosts() {
   return (
-    <section className="relative h-auto pb-16 bg-lighter flex flex-col items-center pt-16">
+    <section id="spaces" className="relative h-auto pb-16 bg-lighter flex flex-col items-center pt-20">
       {/* title */}
        <div className="flex flex-col items-center text-center px-16 sm:px-6 lg:px-8 max-w-4xl mx-auto">
          <p className="oversection text-darker mb-6">
@@ -34,7 +34,7 @@ export default function OverlapPopularPosts() {
 
       <h3 className="title-italic-boxed not-italic mb-4 text-dark">Nature Surroundings</h3>
       <p className="paragraph pb-4 text-center text-dark">Quiet trails, open landscapes, and grounding natural beauty that reconnect you with the earth.</p>
-      <button className=" btn-squared ">Learn More</button>
+      <button className=" btn-squared-ghost ">Learn More</button>
     </div>
   </div>
   {/* right */}
@@ -52,7 +52,7 @@ export default function OverlapPopularPosts() {
 
       <h3 className="title-italic-boxed not-italic mb-4 text-dark">Accommodation</h3>
       <p className="paragraph pb-4 text-center text-dark">Calming, minimalist rooms designed for rest, comfort, and gentle nervous-system reset.</p>
-      <button className=" btn-squared ">Learn More</button>
+      <button className=" btn-squared-ghost ">Learn More</button>
     </div>
   </div>
 </div>
@@ -76,7 +76,7 @@ export default function OverlapPopularPosts() {
 
       <h3 className="title-italic-boxed not-italic mb-4 text-dark">Community Spaces</h3>
       <p className="paragraph pb-4 text-center text-dark">Warm gathering areas for connection, workshops, and meaningful shared moments.</p>
-      <button className=" btn-squared ">Learn More</button>
+      <button className=" btn-squared-ghost ">Learn More</button>
     </div>
   </div>
  <div className="relative flex flex-col items-center justify-center mb-12 md:mb-0 md:w-[40vw]">
@@ -93,7 +93,7 @@ export default function OverlapPopularPosts() {
 
       <h3 className="title-italic-boxed not-italic mb-4 text-dark">Healing Rooms</h3>
       <p className="paragraph pb-4 text-center text-dark">Still, peaceful spaces for meditation, breathwork, and transformative inner work.</p>
-      <button className=" btn-squared ">Learn More</button>
+      <button className=" btn-squared-ghost ">Learn More</button>
     </div>
   </div>
 </div>

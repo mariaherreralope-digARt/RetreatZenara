@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function OptionsTwo() {
   return (
-    <section className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2">
+    <section id="experiences" className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2">
    
 
       {/* LEFT SIDE - Content list */}

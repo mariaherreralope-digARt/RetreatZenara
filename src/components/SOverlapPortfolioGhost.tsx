@@ -3,7 +3,7 @@ import Image from 'next/image';
 // aspect squeare forced 
 export default function SOverlapPortfolioGhost() {
   return (
-    <section className="relative bg-gradient-to-b from-transparent via-light/50 to-transparent md:pb-0 overflow-visible ">
+    <section id="upcoming" className="relative bg-gradient-to-b from-transparent via-light/50 to-transparent md:pb-0 overflow-visible pt-20">
         <div className="flex flex-col items-center text-center px-16 sm:px-6 lg:px-8 max-w-4xl mx-auto">
          <p className="oversection text-darker mb-6">
           Upcoming Retreats
